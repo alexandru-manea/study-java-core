@@ -3,7 +3,7 @@ package various;
 import java.util.HashMap;
 
 /**
- * Example of extending an existing data structure class and using the methods in the
+ * Example of EXTENDING AN EXISTING DATA STRUCTURE class and using the methods in the
  * superclass in the subclass.
  * 
  */
@@ -11,7 +11,7 @@ public class UsingExtensionOfExistingDataStructures {
 
 	private static final String[] COLUMN_NAMES = {"Name", "Age", "Occupation"};
 	
-	private class TableRow extends HashMap<String, String> {
+	private class TableRow extends HashMap<String, String> { // ROW IN QUESTION
 		
 		public TableRow(String[] columnValues) {
 			
