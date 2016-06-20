@@ -7,20 +7,15 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Vector;
 
-/**
- * USING SERIALIZATION AS AN ALTERNATIVE TO THE DEEP COPY 
- *
- */
-public class SerializationDeepCopy {
+public class B_SerializationDeepCopy {
 
 	/**
-	 * *************************************************************************************************************
-	 * SERIALIZATION :: ABILITY TO TURN A GRAPH OF OBJECTS (INCLUDING THE DEGENERATE CASE OF A SINGLE OBJECT) INT AN
+	 * **************************************************************************************************************
+	 * SERIALIZATION :: ABILITY TO TURN A GRAPH OF OBJECTS (INCLUDING THE DEGENERATE CASE OF A SINGLE OBJECT) INTO AN
 	 * ARRAY OF BYTES THAT CAN BE TURNED BACK INTO AN EQUIVALENT GRAPH OF OBJECTS
-	 * *************************************************************************************************************
+	 * **************************************************************************************************************
 	 * 
-	 * --> An object is said to be serializable if it or one of its ancestors implements java.io.Serializable or
-	 * java.io.Externalizable.
+	 * --> An object is said to be serializable if it or one of its ancestors implements java.io.Serializable or java.io.Externalizable
 	 * --> A serializable object can be serialized by passing it to the writeObject() method of an ObjectOutputStream 
 	 * --> This writes out the objects primitive data types, arrays, string, and other object references
 	 * --> The writeObject() method is then called on the referred objects to serialize them as well and so on
@@ -101,7 +96,6 @@ public class SerializationDeepCopy {
 		
 		// deep copy
 		try {
-			
 			copy = (Vector)(ObjectCloner.deepCopy(vector));
 		} 
 		catch (Exception e) {

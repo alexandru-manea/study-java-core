@@ -1,10 +1,11 @@
 package code_style;
 
 /**
- * OBS> ALWAYS PUT OPENING AND CLOSING BRACES IN AN IF EXPRESSION WITH ONE STATEMENT INSIDE.
+ * ALWAYS PUT OPENING AND CLOSING BRACES IN AN IF EXPRESSION WITH ONE STATEMENT INSIDE.
+ * ------------------------------------------------------------------------------------
  * 
- * WHY --> For MAINTAINABILITY, i.e. if you put another statement after the one inside, it will be a stand-alone one,
- * and not within the scope of the if expression, even though the indentation might suggest otherwise. 
+ * WHY --> For MAINTAINABILITY, i.e. if you put another statement after the one inside, it will be a stand-alone one, and not within the scope of 
+ * the if expression, even though the indentation might suggest otherwise. 
  *
  */
 public class IfAlwaysWithBraces {

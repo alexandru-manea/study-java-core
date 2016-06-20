@@ -1,7 +1,7 @@
 package enumerations;
 
 
-public class Introduction
+public class A_Introduction
 {
 	/**
 	 * ENUMERATIONS IN JAVA

@@ -51,19 +51,16 @@ public class OverridableMetodCallsInConstructor {
 	public static void main(String[] args) {
 		
 		new Child(42); // WILL PRINT 0!!!
-		/*
-		 * Base's constructor calls overrideMe(), Child has not finished initializing the final int x, and so the method
-		 * gets the default (wrong) value.
-		 */
+		
+		// Base's constructor calls overrideMe(), Child has not finished initializing the final int x, and so the method gets the default (wrong) value.
 	}
 	
 	
 	/**
-	 * Reason: The superclass constructor runs before the subclass constructor, so the overriding method in the subclass
-	 * will be invoked before the subclass constructor has run.
+	 * Reason: The superclass constructor runs before the subclass constructor, so the overriding method in the subclass will be invoked before the  
+	 * subclass constructor has run.
 	 * 
-	 * If the overriding method depends on any initialization performed by the subclass constructor, the method will not 
-	 * behave as expected.
+	 * If the overriding method depends on any initialization performed by the subclass constructor, the method will not behave as expected.
 	 * 
 	 */
 }

@@ -12,7 +12,7 @@ public class PureFunctions {
 	 * AND ITS RESULT DEPENDS ONLY ON ITS ARGUMENTS.
 	 * ****************************************************************************************************************
 	 * 
-	 * OBS> A function is pure when all its dependencies aare pure functions themselves of constants
+	 * OBS> A function is pure when all its dependencies are pure functions themselves of constants
 	 * 
 	 * Unfortunately, Java makes no distinction between a pure function and any plain old subroutine. Even in the core
 	 * libraries, the two are intermingled with no obvious distinguishing characteristic. 

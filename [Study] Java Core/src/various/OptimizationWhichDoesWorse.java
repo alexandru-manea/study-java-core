@@ -8,9 +8,9 @@ package various;
  */
 public class OptimizationWhichDoesWorse {
 	
-	/*
-	 * Assume we have to implement a method repeat(String base, int count) whose purpose is to return a String consisting
-	 * of count copies of the base string. e.g., repeat("hey", 3) --> "heyheyhey".
+	/**
+	 * Assume we have to implement a method repeat(String base, int count) whose purpose is to return a String consisting of count copies of the base 
+	 * string. e.g., repeat("hey", 3) --> "heyheyhey".
 	 * 
 	 */
 	
@@ -47,8 +47,8 @@ public class OptimizationWhichDoesWorse {
 	 */
 	
 	/*
-	 * PROBLEM --> we're going through the first three checks EVERY TIME, even if the parameters are legitimate for case
-	 * 4. Even more, users of this method will only rarely call it with an empty string or with 0 or 1 as counts.
+	 * PROBLEM --> we're going through the first three checks EVERY TIME, even if the parameters are legitimate for case 4. Even more, users of this 
+	 * method will only rarely call it with an empty string or with 0 or 1 as counts.
 	 * 
 	 */
 	
